@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { ResultComponent } from './components/result/result.component';
+import { FormsModule } from '@angular/forms';
 // import { MaterialModule } from './shared/material/material/material.module';
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ResultComponent } from './components/result/result.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule
     // MaterialModule,
   ],
   providers: [],
