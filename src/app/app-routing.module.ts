@@ -7,20 +7,11 @@ import { Routes, RouterModule } from '@angular/router';
 // NOTE: Array to hold routes
 const routes: Routes = [
   // NOTE: Default route
-  {
-    path: ' ',
-    redirectTo: '/home',
-    pathMatch: 'full'
-  },
-  {
-    path: 'home',
-    component: HomeComponent
-  },
+  // { path: ' ', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   // NOTE: Other routes
-  {
-    path: 'results',
-    component: ResultComponent
-  }
+  { path: 'results', component: ResultComponent }
 ];
 
 @NgModule({
