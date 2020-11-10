@@ -4,6 +4,14 @@
       [(ngModel)]="currentTermValue"
       value="{{ currentTermValue }}"
   >
-  <mat-icon>search_outline</mat-icon>
+  <div
+    [ngClass]="{
+      'right-icon': rightIcon === 'true',
+      'left-icon': rightIcon === 'false'
+    }"
+  >
+    <mat-icon class="search-icon">search_outline</mat-icon>
+  </div>
+
   <button type="submit" style="display: none;"></button>
 </div>
