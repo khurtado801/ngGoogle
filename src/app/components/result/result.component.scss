@@ -136,6 +136,23 @@
         margin-bottom: 5px;
         display: block;
       }
+
+      a.search-results-body-heading {
+        font-size: 20px;
+        line-height: 1.3;
+        color: #1A0DAB;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+
+      div.search-results-body-details {
+        color: #4D5156;
+        margin-bottom: 20px;
+      }
     }
 
   }
